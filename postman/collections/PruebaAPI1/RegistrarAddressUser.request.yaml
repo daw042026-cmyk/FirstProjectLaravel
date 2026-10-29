@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/address?country=Spain&zipcode=02&email=fer@gmail.com
+method: POST
+queryParams:
+  country: Spain
+  zipcode: "02"
+  email: fer@gmail.com
+order: 3000

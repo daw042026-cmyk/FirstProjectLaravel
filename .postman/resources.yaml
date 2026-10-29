@@ -1,0 +1,8 @@
+workspace:
+  id: 231df6f6-89c5-4751-872b-0e1b2d09991d
+localResources:
+  specs:
+    - ../postman/specs/Pruebas_intro_fer/Pruebas_intro_fer.json
+resourceNameMappings:
+  specs:
+    - ../postman/specs/Pruebas_intro_fer/Pruebas_intro_fer.json: Pruebas_intro_fer

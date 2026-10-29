@@ -1,0 +1,77 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Pruebas_intro_fer",
+    "version": "1.0.0",
+    "description": ""
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8000"
+    }
+  ],
+  "paths": {
+    "/api/user/3": {
+      "get": {
+        "summary": "verDatosUser",
+        "responses": {}
+      }
+    },
+    "/api/register": {
+      "post": {
+        "summary": "RegistrarUser",
+        "responses": {}
+      }
+    },
+    "/api/address": {
+      "post": {
+        "summary": "RegistrarAddressUser",
+        "parameters": [
+          {
+            "name": "country",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "Spain"
+          },
+          {
+            "name": "zipcode",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 2
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "fer@gmail.com"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/address/2": {
+      "get": {
+        "summary": "verDatosAddress",
+        "responses": {}
+      }
+    },
+    "/api/user/3/address": {
+      "get": {
+        "summary": "verAddressUser",
+        "responses": {}
+      }
+    },
+    "/api/address/2/user": {
+      "get": {
+        "summary": "verUserAddress",
+        "responses": {}
+      }
+    }
+  }
+}

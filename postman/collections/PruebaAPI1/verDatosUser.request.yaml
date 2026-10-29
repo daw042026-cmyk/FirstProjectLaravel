@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/user/3
+method: GET
+body:
+  type: formdata
+  content:
+    - type: text
+      key: name
+      value: fernando
+      disabled: false
+    - type: text
+      key: email
+      value: fer@gmail.com
+      disabled: false
+    - type: text
+      key: password
+      value: "12345678"
+      disabled: false
+    - type: text
+      key: c_password
+      value: "12345678"
+      disabled: false
+order: 1000
